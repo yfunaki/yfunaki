@@ -1,0 +1,1 @@
+Welcome to Kaila Funaki's CST 336 Home Page!
