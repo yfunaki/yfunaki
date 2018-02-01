@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8" />
+        <title> Lab 1: Kaila Funaki's Portfolio </title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <style>
+              body {
+                  background-color:#F5E2DC;
+                  color:black;
+              }
+              
+              header, main, nav, footer {
+                  text-align: center;
+                  
+              }
+              
+              nav a {
+                  padding: 10px;
+                  padding-bottom: 4px;
+                  font-size: 1.25em;
+                  color: black;
+                  text-decoration: none;
+              }
+              
+              nav a:hover, #current {
+                  border-bottom: 2px blue solid;
+                  font-size: 1.5em;
+                  transition: .4s;
+              }
+              
+              #myPic {
+                  border-radius: 40px;
+                  float: left;
+              }
+              
+              footer {
+                  clear: left;
+                  color: #055B78;
+                  font-size: 0.85em;
+              }
+              
+              #welcomeText {
+                  text-align: left;
+                  padding-left: 500px;
+              }
+              
+              h1 {
+                  font-family: 'Pacifico', cursive;
+                  font-size: 4em;
+                  margin-bottom: 0px;
+              }
+        </style>
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        
+        <header>
+            <h1> Kaila Funaki </h1>
+            <h2> Portfolio </h2>
+        </header>
+        
+        <nav>
+            <hr width="50%" />
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" id="current" >Contact</a>
+        </nav>
+        
+        <br /><br />
+        <main>
+            
+            <div id="content">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScioPo0_kJZ8iTdWbnZSyi7YCfQNc_lpIoeWGJJmJI-r2cmdw/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+            </div>
+        </main>
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+            <br />
+            <hr>
+            CST 336 Internet Programming 2018&copy; Funaki <br />
+            <strong> Disclaimer: </strong> This information on this webpage is used only for academic purposes. <br />
+            <img src="img/csumb-logo.png" alt-"CSUMB logo" />
+            
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>

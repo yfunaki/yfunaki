@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<!--
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+    <head>
+        <meta charset="utf-8" />
+        <title> Lab 1: Kaila Funaki's Portfolio </title>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+         <style>
+              body {
+                  background-color:#F5E2DC;
+                  color:black;
+              }
+              
+              header, main, nav, footer {
+                  text-align: center;
+                  
+              }
+              
+              nav a {
+                  padding: 10px;
+                  padding-bottom: 4px;
+                  font-size: 1.25em;
+                  color: black;
+                  text-decoration: none;
+              }
+              
+              nav a:hover, #current {
+                  border-bottom: 2px blue solid;
+                  font-size: 1.5em;
+                  transition: .4s;
+              }
+              
+              footer {
+                  clear: left;
+                  color: #055B78;
+                  font-size: 0.85em;
+              }
+             
+                            
+              table {
+                  margin: 0px auto;
+              }
+              
+              td {
+                  padding-right: 10px;
+                  font-size: 1.3em;
+              }
+              
+              td strong {
+                  color: #FFFFFF;
+              }
+              
+              #table-header {
+                  background-color: #5C5C5C;
+              }
+              
+              .table-row {
+                  background-color: #84D9F5;
+              }
+              
+              ul {
+                  text-align: left;
+                  padding-left: 300px;
+              }
+              
+              .hobby {
+                  color: #0A50D1;
+              }
+              
+              h1 {
+                  font-family: 'Pacifico', cursive;
+                  font-size: 4em;
+                  margin-bottom: 0px;
+              }
+        </style>
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    <body>
+        <header>
+            <h1>Kaila Funaki</h1>
+            <h2>Portfolio</h2>
+            
+        </header>
+        
+        <nav>
+            <hr width="50%" />
+            <a href="index.html">Home</a>
+            <a href="about.html" id="current" >About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        
+        <br /><br />
+        <div id="content">
+            <table>
+                <tr id="table-header">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong>Years Experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Java</td>
+                    <td>1</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C++</td>
+                    <td>1</td>
+                </tr>
+                <tr class="table-row">
+                    <td>PHP</td>
+                    <td>0</td>
+                </tr>
+            </table>
+            
+            <ul>
+                <li><span class="hobby">Surfing</span>: I enjoy surfing with my friends in Santa Cruz while I am at school.</li>
+                <li><span class="hobby">Travel</span>: I have traveled to Japan, Indonesia, Phillipines, and Mexico. I can't wait to travel to more destinations.</li>
+                <li><span class="hobby">Food</span>: I love to eat different kinds of food, but my favorites are Japanese and Korean cuisine.</li>
+                <li><span class="hobby">School</span>: I am constantly learning new aspects of Business and Computer Science at CSUMB.</li>
+            </ul>
+        </div>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+            <hr>
+            CST 336 Internet Programming 2018&copy; Funaki <br />
+            <strong> Disclaimer: </strong> This information on this webpage is fictitious. <br />
+            It is used only for academic purposes. <br />
+            
+            
+        </footer>
+        <!-- closing footer -->
+        
+    </body>
+    <!-- closing body -->
+
+</html>
