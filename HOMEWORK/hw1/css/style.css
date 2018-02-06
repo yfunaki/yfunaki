@@ -52,3 +52,7 @@
               #cplusplusImg, #javaImg, #pythonImg {
                   float: left;
               }
+              
+              hr {
+                  width: 50%;
+              }
