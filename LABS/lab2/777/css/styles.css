@@ -10,7 +10,12 @@
         color: white;
         
     }
-    
+    footer {
+                  clear: left;
+                  color: #055B78;
+                  font-size: 0.85em;
+    }
+              
     #main {
         font-family: 'Baloo Bhaina', cursive;
         background-image:url("../img/machine.png");
@@ -56,12 +61,4 @@
      top:450px;
      font-size:1.5em;
      line-height: .7em;
-    }
-    
-    footer{
-        font-family: "Times New Roman", Georgia, Serif;
-        font-size:.8em;
-        width:600px;
-        margin:0 auto;
-        padding-top:10px;
     }

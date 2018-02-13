@@ -1,2 +1,11 @@
 [05-Feb-2018 23:34:35 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php on line 52
 [05-Feb-2018 23:34:44 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php on line 52
+[12-Feb-2018 20:24:50 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php on line 10
+[12-Feb-2018 20:24:50 UTC] PHP Stack trace:
+[12-Feb-2018 20:24:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php:0
+[12-Feb-2018 20:24:50 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php on line 10
+[12-Feb-2018 20:24:50 UTC] PHP Stack trace:
+[12-Feb-2018 20:24:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php:0
+[12-Feb-2018 20:24:50 UTC] PHP Fatal error:  Call to undefined function displaySymbol() in /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php on line 15
+[12-Feb-2018 20:24:50 UTC] PHP Stack trace:
+[12-Feb-2018 20:24:50 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/LABS/lab2/777/index.php:0
