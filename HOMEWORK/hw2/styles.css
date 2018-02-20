@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Gorditas:700');
+
+header, main, nav, footer, h1, h2
+{
+    text-align: center;
+}
+
+h1
+{
+    font-family: 'Gorditas', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+    border-style: solid;
+}
+
+h2
+{
+    font-family: 'Gorditas', cursive;
+    text-align: center;
+}
+
+body
+{
+    text-align: center;
+    color:black;
+}
+
+footer
+{
+    clear: left;
+    color: #055B78;
+    font-size: 0.85em;
+}
+
+#symbolImg
+{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    padding: 0px 0px;
+}
