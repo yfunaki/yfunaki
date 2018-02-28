@@ -115,17 +115,6 @@
     <body>
         <br/><br/>
 
-        <?php
-        
-        if (!isset($_GET['keyword']))
-        {
-        
-            echo "<h2> You must type a keyword or select a category </h2>";
-            
-        } 
-        
-        ?>
-
         <form method = "GET">
             <input type = "text" id = "searchEngine" size = "20" name = "keyword" placeholder = "Keyword" value = "<?= $_GET['keyword']?>"/>
             
