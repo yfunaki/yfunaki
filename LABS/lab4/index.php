@@ -5,7 +5,7 @@
     //print_r($_GET); //displaying all content submitted in the form using the GET method
 
     
-    if(isset($_GET['keyword']) && $_GET['keyword'] != "")
+    if(isset($_GET['keyword']) || isset($_GET['category']))
     {
         include 'api/pixabayAPI.php';
         
@@ -29,7 +29,7 @@
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
     
-    if($_GET['keyword'] == "")
+    if($_GET['keyword'] == "" && !isset($_GET['category']))
     {
          echo "<h2> You must type a keyword or select a category </h2>";
     }
@@ -152,7 +152,7 @@
         
         
         <?php
-            if(isset($_GET['keyword']) && $_GET['keyword'] != "") {
+            if(isset($_GET['keyword'])) {
         
         ?>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -182,10 +182,10 @@
               <img class="d-block w-100" src="<?=$imageURLs[4]?>" alt="Fifth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="<?=$imageURLs[5]?>" alt="Fifth slide">
+              <img class="d-block w-100" src="<?=$imageURLs[5]?>" alt="Sixth slide">
             </div>
             <div class="carousel-item">
-              <img class="d-block w-100" src="<?=$imageURLs[6]?>" alt="Fifth slide">
+              <img class="d-block w-100" src="<?=$imageURLs[6]?>" alt="Seventh slide">
             </div>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
