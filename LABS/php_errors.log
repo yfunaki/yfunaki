@@ -2,3 +2,5 @@
 [21-Feb-2018 23:02:36 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/yfunaki/LABS/lab4/index.php on line 3
 [26-Feb-2018 23:38:23 UTC] PHP Parse error:  syntax error, unexpected 'searchTitle' (T_STRING), expecting ',' or ';' in /home/ubuntu/workspace/yfunaki/LABS/lab4/index.php on line 11
 [01-Mar-2018 00:10:15 UTC] PHP Parse error:  syntax error, unexpected end of file in /home/ubuntu/workspace/yfunaki/LABS/lab4/index.php on line 231
+[01-Mar-2018 20:16:05 UTC] PHP Parse error:  syntax error, unexpected ')' in /home/ubuntu/workspace/yfunaki/LABS/lab4/index.php on line 18
+[01-Mar-2018 20:24:25 UTC] PHP Parse error:  syntax error, unexpected '' (T_ENCAPSED_AND_WHITESPACE), expecting identifier (T_STRING) or variable (T_VARIABLE) or number (T_NUM_STRING) in /home/ubuntu/workspace/yfunaki/LABS/lab4/index.php on line 22

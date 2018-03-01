@@ -3,14 +3,18 @@
     $backgroundImage = "img/sea.jpg";
     
     //print_r($_GET); //displaying all content submitted in the form using the GET method
-
+        
+    if(empty($_GET['keyword']) && empty($_GET['category']))
+    {
+         echo "<h2> You must type a keyword or select a category </h2>";
+    }
     
-    if(isset($_GET['keyword']) || isset($_GET['category']))
+    if((($_GET['keyword'] == "" || empty($_GET['keyword'])) && !empty($_GET['category'])) || (!empty($_GET['keyword']) && !empty($_GET['category'])) || (!empty($_GET['keyword']) && empty($_GET['category'])))
     {
         include 'api/pixabayAPI.php';
         
-        // echo "<h3>You searched for: " . $_GET['keyword'] . "</h3>";
         
+
         $orientation = "horizontal";
         $keyword = $_GET['keyword'];
         
@@ -24,15 +28,13 @@
             $keyword = $_GET['category'];
         }
         
+        echo "<h3>You searched for: " . $keyword . "</h3>";
+        
         $imageURLs = getImageURLs($keyword, $orientation);
         
         $backgroundImage = $imageURLs[array_rand($imageURLs)];
     }
-    
-    if($_GET['keyword'] == "" && !isset($_GET['category']))
-    {
-         echo "<h2> You must type a keyword or select a category </h2>";
-    }
+
     
     function checkCategory($category)
     {
@@ -111,6 +113,12 @@
             color: black;
         }
         
+        h3
+        {
+            background-color: #FFFFFF;
+            color: black;
+        }
+        
     </style>
     <body>
         <br/><br/>
@@ -150,9 +158,10 @@
             
         </form>
         
-        
+        <!--($_GET['keyword'] == "" || !empty($_GET['keyword'])) || !empty($_GET['category'])-->
         <?php
-            if(isset($_GET['keyword'])) {
+            // echo empty($_GET['category']);
+            if((($_GET['keyword'] == "" || empty($_GET['keyword'])) && !empty($_GET['category'])) || (!empty($_GET['keyword']) && !empty($_GET['category'])) || (!empty($_GET['keyword']) && empty($_GET['category']))) {
         
         ?>
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -201,6 +210,7 @@
         <?php
             } //end of if statement above in php block
         ?>
+        
         
         <br/><br/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
