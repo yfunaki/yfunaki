@@ -150,20 +150,6 @@
             
         </form>
         
-        <?php
-        
-            if(!isset($_GET['keyword']))
-            {
-                echo "<h2> Type a keyword to display a slideshow <br /> with random images from Pixabay.com </h2>";
-            }
-            // else
-            // {
-            //     for($x = 0; $x < 5; $x++)
-            //     {
-            //         echo "<img src = '" . $imageURLs[rand(0, count($imageURLs))] . "' width = '200' >"; 
-            //     }
-            // }
-        ?>
         
         <?php
             if(isset($_GET['keyword']) && $_GET['keyword'] != "") {
