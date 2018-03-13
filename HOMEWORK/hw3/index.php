@@ -161,7 +161,7 @@
             {
                 echo "<div> <h2> Sorry. You didn't get any of the questions correct. <h2> </div>";
             }
-            echo "<div> <h2> You won " . $totalPoints . " points out of 50. <h2> </div>";
+            echo "<div> <h2> You won " . $totalPoints . " points out of 60. <h2> </div>";
         }
     }
     
