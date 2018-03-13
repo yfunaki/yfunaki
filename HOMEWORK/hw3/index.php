@@ -6,7 +6,11 @@
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if(empty($_GET['answer1']) || $_GET['answer1'] != 8)
+            if(empty($_GET['answer1']))
+            {
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
+            }
+            else if($_GET['answer1'] != 8)
             {
                 echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
             }
@@ -23,7 +27,11 @@
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if($_GET['answer2'] == "" || $_GET['answer2'] != "Hula")
+            if($_GET['answer2'] == "")
+            {
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
+            }
+            else if($_GET['answer2'] != "Hula")
             {
                 echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
             }
@@ -41,7 +49,11 @@
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if($_GET['answer3'] != "Mahalo")
+            if($_GET['answer3'] == "")
+            {
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
+            }
+            else if($_GET['answer3'] != "Mahalo")
             {
                 echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
             }
@@ -58,14 +70,18 @@
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if($_GET['answer4'] == "" || $_GET['answer4'] != "aloha")
+            if($_GET['answer4'] == "")
             {
-                echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
             }
-            else
+            else if($_GET['answer4'] == "aloha" || $_GET['answer4'] == "Aloha")
             {
                 echo "<div> <h3> Correct! You receive 10 points. <h3> </div>";
                 $totalPoints = $totalPoints + 10;
+            }
+            else
+            {
+                echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
             }
         }
     }
@@ -75,7 +91,11 @@
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if($_GET['answer5'] == "" || $_GET['answer5'] != "Honolulu")
+            if($_GET['answer5'] == "")
+            {
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
+            }
+            else if($_GET['answer5'] != "Honolulu")
             {
                 echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
             }

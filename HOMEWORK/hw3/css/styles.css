@@ -1,6 +1,6 @@
 body
 {
-    background-image: url(/yfunaki/HOMEWORK/hw3/img/kalalau.png);
+    background-image: url("/yfunaki/HOMEWORK/hw3/img/kalalau.png");
     background-repeat: no-repeat;
     text-align: center;
     font-family: 'Acme', sans-serif;
@@ -37,4 +37,9 @@ input[type=submit]
     color: black;
     background-color: white;
     border-radius: 20px;
+}
+
+footer
+{
+    background-color: #F3F79E;
 }
