@@ -107,14 +107,39 @@
         }
     }
     
+    function checkAnswer6()
+    {
+        global $totalPoints;
+        if(isset($_GET["submit"]))
+        {
+            if($_GET['answer6'] == "")
+            {
+                echo "<div> <h3> Please answer this question. You received 0 points. <h3> </div>";
+            }
+            else if($_GET['answer6'] != "Hibiscus")
+            {
+                echo "<div> <h3> Wrong. You receive 0 points. <h3> </div>";
+            }
+            else
+            {
+                echo "<div> <h3> Correct! You receive 10 points. <h3> </div>";
+                $totalPoints = $totalPoints + 10;
+            }
+        }
+    }
+    
     function displayPoints()
     {
         global $totalPoints;
         if(isset($_GET["submit"]))
         {
-            if($totalPoints == 50)
+            if($totalPoints == 60)
             {
                 echo "<div> <h2> You got all of the questions correct! <h2> </div>";
+            }
+            else if($totalPoints == 50)
+            {
+                echo "<div> <h2> You got 5 of the questions correct! <h2> </div>";
             }
             else if($totalPoints == 40)
             {
@@ -268,6 +293,22 @@
             <br/>
             
             <?= checkAnswer5(); ?>
+            
+            <br/>
+            
+            <div id = "layoutDiv">
+                <legend> 6. What is Hawai`i's state flower? </legend>
+                <input type = "radio" name = "answer6" id = "answer6" value = "Plumeria" <?= ($_GET['answer6'] == "Plumeria")?"checked":"" ?>>
+                <label for = "Plumeria"> Plumeria </label>
+                <input type = "radio" name = "answer6" id = "answer6" value = "Hibiscus" <?= ($_GET['answer6'] == "Hibiscus")?"checked":"" ?>>
+                <label for = "Hibiscus"> Hibiscus </label>
+                <input type = "radio" name = "answer6" id = "answer6" value = "Palm" <?= ($_GET['answer6'] == "Palm")?"checked":"" ?>>
+                <label for = "Palm"> Palm </label>
+            </div>
+            
+            <br/>
+            
+            <?= checkAnswer6(); ?>
             
             <br/>
             
