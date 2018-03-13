@@ -6,3 +6,15 @@
 [20-Feb-2018 19:02:16 UTC] PHP Parse error:  syntax error, unexpected '$chosen' (T_VARIABLE), expecting '(' in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw2/index.php on line 24
 [20-Feb-2018 19:02:23 UTC] PHP Parse error:  syntax error, unexpected 'computer' (T_STRING), expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw2/index.php on line 106
 [20-Feb-2018 19:02:34 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw2/index.php on line 112
+[13-Mar-2018 19:43:07 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php on line 204
+[13-Mar-2018 19:43:07 UTC] PHP Stack trace:
+[13-Mar-2018 19:43:07 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php:0
+[13-Mar-2018 19:43:19 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php on line 204
+[13-Mar-2018 19:43:19 UTC] PHP Stack trace:
+[13-Mar-2018 19:43:19 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php:0
+[13-Mar-2018 19:44:39 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php on line 204
+[13-Mar-2018 19:44:39 UTC] PHP Stack trace:
+[13-Mar-2018 19:44:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php:0
+[13-Mar-2018 19:44:42 UTC] PHP Fatal error:  Call to undefined function checkCategory() in /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php on line 204
+[13-Mar-2018 19:44:42 UTC] PHP Stack trace:
+[13-Mar-2018 19:44:42 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/HOMEWORK/hw3/index.php:0
