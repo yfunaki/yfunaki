@@ -1,43 +1,63 @@
 <?php
     include 'functions.php';
-    
     session_start();
     
-    
-    if(!isset($_SESSION['cart']))
+    if(isset($_POST['removeId']))
     {
-        $_SESSION['cart'] = array();
-    }
-    
-    if(isset($_GET['query']))
-    {
-        include 'wmapi.php';
-        $items = getProducts($_GET['query']);
-    }
-    
-    if(isset($_POST['itemName']))
-    {
-        $newItem = array();
-        $newItem['name'] = $_POST['itemName'];
-        $newItem['price'] = $_POST['itemPrice'];
-        $newItem['img'] = $_POST['itemImg'];
-        $newItem['id'] = $_POST['itemId'];
-        
-        foreach($_SESSION['cart'] as &$item)
+        foreach($_SESSION['cart'] as $itemKey => $item)
         {
-            if($newItem['id'] == $item['id'])
+            if($item['id'] == $_POST['removeId'])
             {
-                $item['quantity'] += 1;
-                $found = true;
+                unset($_SESSION['cart'][$itemKey]);
             }
         }
     }
     
-    if($found != true)
+    if(isset($_POST['itemId']))
     {
-        $newItem['quantity'] = 1;
-        array_push($_SESSION['cart'], $newItem);
+        foreach($_SESSION['cart'] as &$item)
+        {
+            if($item['id'] == $POST['itemId'])
+            {
+                $item['quantity'] == $_POST['update'];
+            }
+        }
     }
+    
+    // if(!isset($_SESSION['cart']))
+    // {
+    //     $_SESSION['cart'] = array();
+    // }
+    
+    // if(isset($_GET['query']))
+    // {
+    //     include 'wmapi.php';
+    //     $items = getProducts($_GET['query']);
+    // }
+    
+    // if(isset($_POST['itemName']))
+    // {
+    //     $newItem = array();
+    //     $newItem['name'] = $_POST['itemName'];
+    //     $newItem['price'] = $_POST['itemPrice'];
+    //     $newItem['img'] = $_POST['itemImg'];
+    //     $newItem['id'] = $_POST['itemId'];
+        
+    //     foreach($_SESSION['cart'] as &$item)
+    //     {
+    //         if($newItem['id'] == $item['id'])
+    //         {
+    //             $item['quantity'] += 1;
+    //             $found = true;
+    //         }
+    //     }
+    // }
+    
+    // if($found != true)
+    // {
+    //     $newItem['quantity'] = 1;
+    //     array_push($_SESSION['cart'], $newItem);
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -71,6 +91,7 @@
                 </nav>
                 <br /> <br /> <br />
                 <h2>Shopping Cart</h2>
+                <?php displayCart(); ?>
                 <!-- Cart Items -->
 
             </div>
