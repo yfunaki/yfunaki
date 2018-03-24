@@ -4,6 +4,21 @@
     
     $conn = getDatabaseConnection("ottermart");
     
+    foreach($_SESSION['cart'] as &$item)
+    {
+        if($newItem['id'] == $item['id'])
+        {
+            $item['quantity'] += 1;
+            $found = true;
+        }
+    }
+    
+    if($found != true)
+    {
+        $newItem['quantity'] = 1;
+        array_push($_SESSION['cart'], $newItem);
+    }
+    
     function displayCategories()
     {
         global $conn;
@@ -44,14 +59,39 @@
                 $sql .= " AND catId = :categoryId";
                 $namedParameters[":categoryId"] = $_GET['category'];
             }
-
+            
+            if(!empty($_GET['priceFrom']))
+            {
+                $sql .= " AND price >= :priceFrom";
+                $namedParameters[":priceFrom"] = $_GET['priceFrom'];
+            }
+            
+            if(!empty($_GET['priceTo']))
+            {
+                $sql .= " AND price <= :priceTo";
+                $namedParameters[":priceTo"] = $_GET['priceTo'];
+            }
+            
+            if(isset($_GET['orderBy']))
+            {
+                if($_GET['orderBy'] == "price")
+                {
+                    $sql .= " ORDER BY price";
+                }
+                else
+                {
+                    $sql .= " ORDER BY productName";
+                }
+            }
+            
             $stmt = $conn -> prepare($sql);
             $stmt -> execute($namedParameters);
             $records = $stmt -> fetchAll(PDO::FETCH_ASSOC);
             
             foreach($records as $record)
             {
-                echo $record["productName"] . " " . $record["productDescription"] . "<br />";
+                echo "<a href=\"purchaseHistory.php?productId=".$record["productId"]."\"> History </a>";
+                echo $record["productName"] . " " . $record["productDescription"] . " $" . $record["price"] . "<br /><br />";
             }
             
         }
