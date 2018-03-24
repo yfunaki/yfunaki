@@ -18,9 +18,9 @@
     {
         $newItem = array();
         $newItem['name'] = $_POST['itemName'];
-        $newItem['id'] = $_POST['itemId'];
         $newItem['price'] = $_POST['itemPrice'];
-        $newItem['image'] = $_POST['itemImage'];
+        $newItem['img'] = $_POST['itemImg'];
+        $newItem['id'] = $_POST['itemId'];
         
         foreach($_SESSION['cart'] as &$item)
         {
@@ -64,7 +64,7 @@
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='scart.php'>Cart</a></li>
-                        <span class = 'glyphicon glyphicon-shopping-cart' aria-hidden = 'true'>
+                        <span class = 'glyphicon glyphicon-shopping-cart' aria-hidden='true'>
                         </span> Cart: <?php displayCartCount(); ?> </a></li>
                     </ul>
                 </div>
