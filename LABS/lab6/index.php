@@ -33,7 +33,6 @@
         {
             echo "<option value ='" . $record["catId"] . "'>" . $record["catName"] . "</option>";
         }
-    
     }
     
     function displaySearchResults()
@@ -50,7 +49,7 @@
             
             if(!empty($_GET['product']))
             {
-                $sql .= " AND productName LIKE :productName";
+                $sql .= " AND productName LIKE :productName or productDescription LIKE :productName";
                 $namedParameters[":productName"] = "%" . $_GET['product'] . "%";
             }
             
