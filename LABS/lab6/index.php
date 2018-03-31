@@ -4,20 +4,20 @@
     
     $conn = getDatabaseConnection("ottermart");
     
-    foreach($_SESSION['cart'] as &$item)
-    {
-        if($newItem['id'] == $item['id'])
-        {
-            $item['quantity'] += 1;
-            $found = true;
-        }
-    }
+    // foreach($_SESSION['cart'] as &$item)
+    // {
+    //     if($newItem['id'] == $item['id'])
+    //     {
+    //         $item['quantity'] += 1;
+    //         $found = true;
+    //     }
+    // }
     
-    if($found != true)
-    {
-        $newItem['quantity'] = 1;
-        array_push($_SESSION['cart'], $newItem);
-    }
+    // if($found != true)
+    // {
+    //     $newItem['quantity'] = 1;
+    //     array_push($_SESSION['cart'], $newItem);
+    // }
     
     function displayCategories()
     {
@@ -102,6 +102,10 @@
 <html>
     <head>
         <title> Lab 6: OtterMart Product Search </title>
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <style>
+            @import url("styles.css");
+        </style>
     </head>
     
     <body>
