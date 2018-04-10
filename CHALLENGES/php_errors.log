@@ -13,3 +13,13 @@ Stack trace:
 #0 /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge4/reports.php(46): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge4/reports.php on line 46
+[09-Apr-2018 22:18:21 UTC] PHP Parse error:  syntax error, unexpected '$guess' (T_VARIABLE), expecting '(' in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 17
+[09-Apr-2018 22:26:10 UTC] PHP Fatal error:  Call to undefined function guessHistory() in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 61
+[09-Apr-2018 22:26:10 UTC] PHP Stack trace:
+[09-Apr-2018 22:26:10 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php:0
+[09-Apr-2018 22:38:47 UTC] PHP Fatal error:  Call to undefined function arr() in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 4
+[09-Apr-2018 22:38:47 UTC] PHP Stack trace:
+[09-Apr-2018 22:38:47 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php:0
+[09-Apr-2018 22:41:53 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 67
+[09-Apr-2018 22:44:48 UTC] PHP Parse error:  syntax error, unexpected '$' in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 18
+[09-Apr-2018 22:44:53 UTC] PHP Parse error:  syntax error, unexpected '$' in /home/ubuntu/workspace/yfunaki/CHALLENGES/challenge5/index.php on line 18

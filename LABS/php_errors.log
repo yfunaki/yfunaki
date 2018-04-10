@@ -101,3 +101,60 @@ Stack trace:
 #1 /home/ubuntu/workspace/yfunaki/LABS/lab6/index.php(139): displaySearchResults()
 #2 {main}
   thrown in /home/ubuntu/workspace/yfunaki/LABS/lab6/index.php on line 88
+[04-Apr-2018 21:16:38 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:17:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:18:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:20:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:20:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:21:20 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting '(' in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 5
+[04-Apr-2018 21:21:27 UTC] PHP Parse error:  syntax error, unexpected 'if' (T_IF), expecting '(' in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 5
+[04-Apr-2018 21:21:40 UTC] PHP Parse error:  syntax error, unexpected 'echo' (T_ECHO), expecting ',' or ';' in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 60
+[04-Apr-2018 21:23:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:24:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 21:36:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'productName' cannot be null' in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php:48
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php(48): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/addProduct.php on line 48
+[04-Apr-2018 22:27:39 UTC] PHP Parse error:  syntax error, unexpected 'om_product' (T_STRING) in /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php on line 59
+[09-Apr-2018 21:25:01 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php on line 2
+[09-Apr-2018 21:25:01 UTC] PHP Stack trace:
+[09-Apr-2018 21:25:01 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php:0
+[09-Apr-2018 21:25:01 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php:2
+[09-Apr-2018 21:25:17 UTC] PHP Warning:  session_destroy(): Trying to destroy uninitialized session in /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php on line 2
+[09-Apr-2018 21:25:17 UTC] PHP Stack trace:
+[09-Apr-2018 21:25:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php:0
+[09-Apr-2018 21:25:17 UTC] PHP   2. session_destroy() /home/ubuntu/workspace/yfunaki/LABS/lab7/index.php:2
+[09-Apr-2018 21:35:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: no parameters were bound' in /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php:40
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php(40): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php on line 40

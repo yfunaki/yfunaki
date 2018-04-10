@@ -1,4 +1,8 @@
+<?php
+    session_start();
 
+    session_destroy();
+?>
 
 <!DOCTYPE html>
 <html>
@@ -15,5 +19,15 @@
             
             <input type = "submit" name = "submitForm" value = "Login!"/>
         </form>
+        
+        <?php
+            if(isset($_SESSION['wrong']))
+            {
+                echo $_SESSION['wrong'];
+            }
+        ?>
+        
+        <br/>
+        
     </body>
 </html>

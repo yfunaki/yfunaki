@@ -13,20 +13,27 @@
     
     //echo $password;
     
+    //have to change from '$username' to :username and add named parameters array to prevent SQL injection
     $sql = "SELECT *
             FROM om_admin
-            WHERE username = '$username'
-            AND password = '$password'";
+            WHERE username = :username
+            AND password = :password";
+    
+    $np = array();
+    $np[":username"] = $username;
+    $np[":password"] = $password;
     
     $stmt = $conn -> prepare($sql);
-    $stmt -> execute();
+    $stmt -> execute($np);
     $record = $stmt -> fetch(PDO::FETCH_ASSOC); //only one single record (fetch() not fetchAll())
     
     //print_r($record);
     
     if(empty($record))
     {
-        echo "Wrong username or password.";
+        //echo "Wrong username or password.";
+        $_SESSION['wrong'] = "Wrong username and/or password.";
+        header("Location:index.php");
     }
     else
     {

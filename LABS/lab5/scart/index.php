@@ -64,8 +64,6 @@
                     <ul class='nav navbar-nav'>
                         <li><a href='index.php'>Home</a></li>
                         <li><a href='scart.php'>Cart</a></li>
-                        <span class = 'glyphicon glyphicon-shopping-cart' aria-hidden='true'>
-                        </span> Cart: <?php displayCartCount(); ?> </a></li>
                     </ul>
                 </div>
             </nav>
