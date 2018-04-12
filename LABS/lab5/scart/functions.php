@@ -53,7 +53,7 @@
                 $itemImage = $item['thumbnailImage'];
                 $itemId = $item['itemId'];
                 
-                echo '<tr>';
+                echo "<tr>";
                 echo "<td><img src = '$itemImage'></td>";
                 echo "<td><h4>$itemName</h4></td>";
                 echo "<td><h4>$itemPrice</h4></td>";
@@ -72,8 +72,9 @@
                 {
                     echo '<td><button class = "btn btn-warning">Add</button></td>';
                 }
-                echo '</tr>';
+
                 echo '</form>';
+                echo "</tr>";
             }
             echo "</table>";
         }

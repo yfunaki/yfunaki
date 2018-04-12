@@ -9,6 +9,10 @@
     <head>
         <title> Admin Login </title>
     </head>
+    <style>
+        @import url("styles.css");
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <body>
         <h1> OtterMart - Admin Login </h1>
         
@@ -16,7 +20,7 @@
             
             Username: <input type = "text" name = "username"/> <br/>
             Password: <input type = "password" name = "password"/> <br/>
-            
+            <br/>
             <input type = "submit" name = "submitForm" value = "Login!"/>
         </form>
         
@@ -30,4 +34,11 @@
         <br/>
         
     </body>
+    <footer>
+        <hr>
+            CST 336 Internet Programming 2018&copy; Funaki <br />
+            <strong> Disclaimer: </strong> This information on this webpage is used only for academic purposes. <br />
+            <img src="img/buddy_verified.png" alt-"Buddy Verified Badge" />
+            
+    </footer>
 </html>

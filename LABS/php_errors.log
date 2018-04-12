@@ -158,3 +158,6 @@ Stack trace:
 #0 /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php(40): PDOStatement->execute()
 #1 {main}
   thrown in /home/ubuntu/workspace/yfunaki/LABS/lab7/updateProduct.php on line 40
+[12-Apr-2018 23:35:50 UTC] PHP Parse error:  syntax error, unexpected '<' in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 68
+[12-Apr-2018 23:42:23 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 92
+[12-Apr-2018 23:42:40 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or ${ (T_DOLLAR_OPEN_CURLY_BRACES) or {$ (T_CURLY_OPEN) in /home/ubuntu/workspace/yfunaki/LABS/lab7/admin.php on line 92

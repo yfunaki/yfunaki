@@ -1,6 +1,9 @@
 <?php
     session_start();
     
+    include '../../dbConnection.php';
+    $dbConn = getDatabaseConnection("challenge");
+
     $check = false;
     $guessCount = array();
     $x = 0;
@@ -37,6 +40,7 @@ if(isset($_GET['giveup']))
 }
 
 function Num($guess){
+    global $dbConn;
     $num = $_SESSION['num'];
     if(isset($_GET['guessNumber']))
     {
@@ -51,13 +55,21 @@ function Num($guess){
     if($guess == $num && isset($_GET['guessNumber'])){
     echo "You've guessed the number!<br/>";
         global $guessCount;
-         $_SESSION['numberGuessed'][] = $num;
+         $_SESSION['numberGuessed'][]= $num;
         $_SESSION['totalTries'][] = $_SESSION['attempts']; 
         // guessHistory();
         
+        $number = $num;
+        $tries = $_SESSION['attempts'];
         
-        INSERT INTO `guess` (`guessId`, `number`, `attempts`) VALUES (NULL, '5', '5')
+        $sql = "INSERT INTO `guess` (`guessId`, `number`, `attempts`) VALUES (NULL, :number, :tries)";
        
+       $np = array();
+       $np[":number"] = $number;
+       $np[":tries"] = $tries;
+       
+       $stmt = $dbConn -> prepare($sql);
+        $stmt -> execute($np);
     }
     
     else if ($guess < $num && isset($_GET['guessNumber'])){
@@ -73,9 +85,15 @@ function Num($guess){
 
 function guessHistory()
 {
+    global $dbConn;
+    $sql = "SELECT * FROM `guess`";
+    
+      $stmt = $dbConn->query($sql);	
+	  $stmt->execute();
+      $records = $stmt->fetchALL(PDO::FETCH_ASSOC);
 
-     for ($i=0; $i < count($_SESSION['numberGuessed']); $i++ ) {
-    echo "You guessed the number " . $_SESSION['numberGuessed'][$i] . " in ". $_SESSION['totalTries'][$i] . " attempts <br />";
+     foreach($records as $record) {
+    echo "You guessed the number " . $record['number'] . " in ". $record['attempts']. " attempts <br />";
 }
 }
 ?>
@@ -93,7 +111,7 @@ function guessHistory()
             Guess: <input type = "text" name = "guess">
             <br/>
             <input type = "submit" name = "guessNumber" value = "Guess Number">
-            <br/>
+            <br/><br/>
             <input type = "submit" name = "giveup" value = "Give Up">
             <input type = "submit" name = "playAgain" value = "Play Again">
             <br/>

@@ -1,0 +1,19 @@
+h1, body
+{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+input[type=submit]
+{
+    background-color: #0298C9;
+    color: white;
+    font-size: 14px;
+}
+
+input[type=submit]:hover
+{
+    background-color: white;
+    color: black;
+    font-size: 40px;
+}

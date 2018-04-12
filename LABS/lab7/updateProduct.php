@@ -99,6 +99,10 @@
     <head>
         <title> Update Product </title>
     </head>
+    <style>
+        @import url("styles.css");
+    </style>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <body>
         <h1> Update Product </h1>
         
@@ -125,4 +129,11 @@
         </form>
         
     </body>
+    <footer>
+        <hr>
+            CST 336 Internet Programming 2018&copy; Funaki <br />
+            <strong> Disclaimer: </strong> This information on this webpage is used only for academic purposes. <br />
+            <img src="img/buddy_verified.png" alt-"Buddy Verified Badge" />
+            
+    </footer>
 </html>
