@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> JavaScript Quiz </title>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        <script>
+            
+            $(document).ready( function()
+            {
+                $("button").click( function()
+                {
+                    if ($("#q1").val() == "Sacramento" || $("#q1").val() == "sacramento")
+                    {
+                          
+                        //   alert("Correct!");
+                        $("#feedback1").html("Correct! The correct answer is Sacramento.");
+                          
+                    }
+                    else
+                    {
+                      
+                        //   alert("Incorrect!");
+                        $("#feedback1").html(" Incorrect! The capital is Sacramento!");
+                    }
+                      
+                    if($("#q2").val == "Otter")
+                    {
+                        $("#feedback2").html("Correct! CSUMB's mascot is the otter.");
+                    }
+                    else
+                    {
+                        $("#feedback2").html(" Incorrect! CSUMB's mascot is the otter.");
+                    }
+                    
+                });
+            });
+            
+            
+            
+        </script>
+    
+    </head>
+    <body>
+        
+        1. What is the capital of California?
+        
+        <input id = "q1" type="text">
+        
+        <div id = "feedback1"></div>
+        
+        <br/><br/>
+        
+        2. What is CSUMB's mascot?
+        
+        <select id = "q2">
+        <option value = "" > Select One </option>
+        <option value = "Otter" > Otter </option>
+        <option value = "Dolphin" > Dolphin </option>
+        <option value = "Tree" > Tree </option>
+        </select>
+        
+        <div id = "feedback2"></div>
+        
+        <button> Submit Quiz </button>
+
+
+    </body>
+</html>

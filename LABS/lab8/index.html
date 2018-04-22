@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hangman</title>
+        <link  href="css/styles.css" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        @import url("css/styles.css");
+                
+        h1
+        {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 70px;
+        }
+             
+        h4
+        {
+            text-align: center;
+            font-family: 'Pacifico', cursive;
+            font-size: 20px;
+        }
+        body
+        {
+            background-color: #c9fff6;
+        }
+        
+        footer
+        {
+            text-align: center;
+        }
+        #won, #lost
+        {
+            display: none;
+            text-align: center;
+        }
+        
+        #word, #letters
+        {
+            padding: 20px, 0px;
+        }
+        
+        #man
+        {
+            margin: 20px auto;
+            width: 600px;
+            height: 600px;
+            border: solid;
+        }
+        
+        #word
+        {
+            font-size: 2em;
+        }
+        
+        .hint
+        {
+            font-size: 1em !important;
+        }
+        
+        .btn
+        {
+            padding: 7px 7px !important;
+            margin: 0px 2px;
+        }
+        
+
+        </style>
+    </head>
+    <body>
+        <div class = 'container text-center'>
+            <header>
+                <h1>Hangman</h1>
+                <br/>
+                <h4>JavaScript Edition</h4>
+            </header>
+            <div>
+                <button id = "hint">Hint</button>
+            </div>
+            <div id = "word"></div>
+            <div id = "letters">
+                <!--<input type = "text" id = "letterBox" size = "3">-->
+                <!--<button id = "letterBtn">Submit</button>-->
+            </div>
+            
+            <div id = "man">
+                <img src = "img/stick_0.png" id = "hangImg">
+            </div>
+            
+        </div>
+        <div id = "won">
+            <h2>You won!</h2>
+            <button class = "replayBtn btn btn-success">Play Again</button>
+        </div>
+        <div id = "lost">
+            <h2>You lost!</h2>
+            <button class = "replayBtn btn btn-warning">Play Again</button>
+        </div>
+        
+        <div id = "list">
+        
+        </div>
+        <script src = "js/hangman.js"></script>
+
+    </body>
+    <footer>
+        <hr>
+            CST 336 Internet Programming 2018&copy; Funaki <br />
+            <strong> Disclaimer: </strong> This information on this webpage is used only for academic purposes. <br />
+            <img src="img/buddy_verified.png" alt-"Buddy Verified Badge" />
+    </footer>
+</html>
