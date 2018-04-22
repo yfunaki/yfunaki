@@ -91,29 +91,19 @@ function updateBoard()
 $(".replayBtn").on("click", function()
 {
     location.reload();
-    // document.getElementById("letters").innerHTML = "";
-    
-    // createLetters();
-    // $("#letters").show();
-        
-    // // for(var letter of alphabet)
-    // // {
-    // //     enableButton($(letter.attr("id")));
-    // // }
-    
-    // board = [];
+
     // selectedWord = "";
     // selectedHint = "";
     // remainingGuesses = 6;
+    // board = [];
+    // updateMan();
+    // $("#lost").hide();
+    // $("#won").hide();
+    // $("#letters").show();
+    // document.getElementById("word").innerHTML = "";
+    // document.getElementById("letters").innerHTML = "";
+    // startGame();
     
-    // $('#won').hide();
-    // $('#lost').hide();
-    
-    // $("#hangImg").attr("src", "img/stick_0.png");
-    
-    // pickWord();
-    // initBoard();
-    // updateBoard();
 } );
 
 function createLetters()
