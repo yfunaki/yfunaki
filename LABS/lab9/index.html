@@ -137,15 +137,32 @@
                        $("#usernameMsg").css('color', 'red');
                        return;
                    }
-                   else if (zipCode == "") {
+                   else {
+                       $("#usernameMsg").html("");
+                   }
+                   if (zipCode == "") {
                        $("#zipCodeMsg").html("Please enter a zip code.");
                        $("#zipCodeMsg").css('color', 'red');
                        return;
+                   }
+                   else
+                   {
+                       $("#zipCodeMsg").html("");
                    }
                    if (password == "") {
                        $("#passwordMsg").html("Please enter a password.");
                        $("#passwordMsg").css('color', 'red');
                        return;
+                   }
+                   else if(password2 == "") {
+                       $("#passwordMsg2").html("Please enter a password.");
+                       $("#passwordMsg2").css('color', 'red');
+                       return;
+                   }
+                   else
+                   {
+                       $("#passwordMsg").html("");
+                       $("#passwordMsg2").html("");
                    }
                    if (fName.length == 0) {
                        $("#submitMsg").html("Please enter a first name.");
@@ -161,6 +178,10 @@
                        $("#passwordMsg").html("Passwords don't match.");
                        $("#passwordMsg").css('color', 'red');
                        return;
+                   }
+                   if(password == $("#password2").val()) {
+                       $("#passwordMsg").html("");
+                       $("#passwordMsg2").html("");
                    }
                 //   alert("hello");
                    $.ajax({
@@ -226,9 +247,9 @@
                 
                 Desired Username: <input type="text" id = "username"><span id = "usernameMsg"></span><br>
                 
-                Password: <input type="password" id = "password1"><br>
+                Password: <input type="password" id = "password1"><span id = "passwordMsg"></span><br>
                 
-                Type Password Again: <input type="password" id = "password2"><span id = "passwordMsg"></span><br>
+                Type Password Again: <input type="password" id = "password2"><span id = "passwordMsg2"></span><br>
                 
                 <input type="submit" id = "submit" value="Sign up!">
                 
