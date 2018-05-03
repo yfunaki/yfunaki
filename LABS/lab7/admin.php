@@ -72,7 +72,7 @@
         <form action = "addProduct.php">
             <input type = "submit" name = "addProduct" value = "Add Product"/>
         </form>
-        <form action="logout.php">
+        <form action= "logout.php">
             <input type="submit"  value="Logout"/>
         </form>
         
