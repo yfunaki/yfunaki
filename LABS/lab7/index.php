@@ -18,10 +18,10 @@
         
         <form method = "POST" action = "loginProcess.php">
             
-            Username: <input type = "text" name = "username"/> <br/>
-            Password: <input type = "password" name = "password"/> <br/>
+            Username: <input type = "text" id = "username" name = "username"/><span id = "usernameMsg"></span> <br/>
+            Password: <input type = "password" id = "password" name = "password"/><span id = "passwordMsg"></span> <br/>
             <br/>
-            <input type = "submit" name = "submitForm" value = "Login!"/>
+            <input type = "submit" id = "submit" name = "submitForm" value = "Login!"/>
         </form>
         
         <?php

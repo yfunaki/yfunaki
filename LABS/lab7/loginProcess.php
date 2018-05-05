@@ -37,6 +37,7 @@
     }
     else
     {
+        echo json_encode($record);
         //echo $record['firstName'] . " " . $record['lastName'];
         $_SESSION['adminName'] = $record['firstName'] . " " . $record['lastName'];
         

@@ -668,7 +668,7 @@ function display(){
     include 'header.php';
 
 ?>
-            
+        <h1>Otterstyle Shop's Main Page</h1>    
         <form>  
          <!-- Category for filtering-->
          <h4>Filter Data</h4>

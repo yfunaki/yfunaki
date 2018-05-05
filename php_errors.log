@@ -48,3 +48,78 @@ Stack trace:
 #0 /home/ubuntu/workspace/yfunaki/FINAL/addProduct.php(50): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/yfunaki/FINAL/addProduct.php on line 50
+[04-May-2018 17:29:32 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 52
+[04-May-2018 17:29:32 UTC] PHP Stack trace:
+[04-May-2018 17:29:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:29:32 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:52
+[04-May-2018 17:30:00 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 52
+[04-May-2018 17:30:00 UTC] PHP Stack trace:
+[04-May-2018 17:30:00 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:30:00 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:52
+[04-May-2018 17:33:19 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 26
+[04-May-2018 17:33:34 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 26
+[04-May-2018 17:33:34 UTC] PHP Stack trace:
+[04-May-2018 17:33:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:33:34 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:26
+[04-May-2018 17:33:34 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 53
+[04-May-2018 17:33:34 UTC] PHP Stack trace:
+[04-May-2018 17:33:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:33:34 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:53
+[04-May-2018 17:33:44 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 26
+[04-May-2018 17:33:44 UTC] PHP Stack trace:
+[04-May-2018 17:33:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:33:44 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:26
+[04-May-2018 17:33:44 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 53
+[04-May-2018 17:33:44 UTC] PHP Stack trace:
+[04-May-2018 17:33:44 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:33:44 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:53
+[04-May-2018 17:41:58 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 26
+[04-May-2018 17:41:58 UTC] PHP Stack trace:
+[04-May-2018 17:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:41:58 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:26
+[04-May-2018 17:41:58 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 53
+[04-May-2018 17:41:58 UTC] PHP Stack trace:
+[04-May-2018 17:41:58 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:41:58 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:53
+[04-May-2018 17:42:55 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 27
+[04-May-2018 17:42:55 UTC] PHP Stack trace:
+[04-May-2018 17:42:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:42:55 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:27
+[04-May-2018 17:42:55 UTC] PHP Warning:  log() expects parameter 1 to be double, array given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 54
+[04-May-2018 17:42:55 UTC] PHP Stack trace:
+[04-May-2018 17:42:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:42:55 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:54
+[04-May-2018 17:50:17 UTC] PHP Warning:  log() expects parameter 1 to be double, string given in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 27
+[04-May-2018 17:50:17 UTC] PHP Stack trace:
+[04-May-2018 17:50:17 UTC] PHP   1. {main}() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:0
+[04-May-2018 17:50:17 UTC] PHP   2. log() /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:27
+[04-May-2018 17:50:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:51
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(51): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 51
+[04-May-2018 17:51:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 50
+[04-May-2018 17:53:12 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 50
+[04-May-2018 17:53:16 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 50
+[04-May-2018 17:53:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 50
+[04-May-2018 17:53:33 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: parameter was not defined' in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php:50
+Stack trace:
+#0 /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php(50): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/yfunaki/FINAL/updateProduct.php on line 50

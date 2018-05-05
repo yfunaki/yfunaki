@@ -11,6 +11,58 @@
 ?>
     <head>
         <title> Admin Login </title>
+        <script>
+            $(document).ready( function()
+            {
+                $("#submit").click(function()
+                {
+                    var username = $("#username").val();
+                    var password = $("#password").val();
+                //     if(username = "")
+                //     {
+                //         $("#usernameMsg").html("Please enter a username.");
+                //         $("#usernameMsg").css('color', 'red');
+                //         return;
+                //     }
+                //     else
+                //     {
+                //       $("#usernameMsg").html("");
+                //   }
+                //   if (password == "")
+                //   {
+                //       $("#passwordMsg").html("Please enter a password.");
+                //       $("#passwordMsg").css('color', 'red');
+                //       return;
+                //   }
+                //   else
+                //   {
+                //       $("#passwordMsg").html("");
+                //   }
+                   $.ajax({
+                    type: "GET",
+                    url: "loginProcess.php",
+                    dataType: "json",
+                    data: { "username": username, "password": password},
+                    success: function(data,status) {
+                    // alert(data);
+                        if(data)
+                        {
+                            
+                        }
+                        else
+                        {
+                            
+                        }
+                    },
+                    complete: function(data,status) { //optional, used for debugging purposes
+                    //alert(status);
+                    }
+                    
+                    });//ajax
+                    
+                });
+            }); //document.ready
+        </script>
     </head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <body>

@@ -23,17 +23,18 @@
     
     if(isset($_GET['updateProduct']))
     {
+        global $conn;
         //echo "Trying to update the product...";
         
-        $sql = "UPDATE product
-                SET productName = :productName,
-                    productDescription = :productDescription,
-                    productImage = :productImage,
-                    productPrice = :productPrice,
-                    productSize = :productSize,
-                    catId = :catId,
-                    productGender = :gender
-                WHERE productId = :productId";
+        $sql = "UPDATE `product`
+                SET `productName` = :productName,
+                    `productDescription` = :productDescription,
+                    `productImage` = :productImage,
+                    `productPrice` = :productPrice,
+                    `productSize` = :size,
+                    `catId` = :catId,
+                    `productGender` = :gender
+                WHERE `productId` = :productId;";
         
         $np = array();
         $np[":productName"] = $_GET['productName'];
@@ -41,7 +42,7 @@
         $np[":productImage"] = $_GET['productImage'];
         $np[":productPrice"] = $_GET['productPrice'];
         $np[":catId"] = $_GET['catId'];
-        $np[":productSize"] = $_GET['productSize'];
+        $np[":size"] = $_GET['size'];
         $np[":productId"] = $_GET['productId'];
         $np[":gender"] = $_GET['gender'];
         
