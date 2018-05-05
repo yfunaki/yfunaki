@@ -66,7 +66,7 @@
     </head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <body>
-        <h1> OtterMart - Admin Login </h1>
+        <h1> Otterstyle Shop - Admin Login </h1>
         
         <form method = "POST" action = "loginProcess.php">
             
