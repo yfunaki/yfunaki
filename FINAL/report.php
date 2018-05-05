@@ -5,6 +5,7 @@
 <h1> Report for Otterstyle Shop</h1>
 
 <?php
+include '../dbConnection.php';
 
 $sql = "SELECT AVG(productPrice) FROM product";
   
@@ -16,9 +17,9 @@ $host = "localhost";
 $dbname = "otterstyle";
 $username = "root";
 $password = "";
-$dbConn = new PDO("mysql:host=$host;dbname=$dbname", $username, $password);
 
-$dbConn -> setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+$dbConn = getDatabaseConnection("otterstyle");
+    
 
 $stmt = $dbConn -> prepare($sql);
 $stmt -> execute();
