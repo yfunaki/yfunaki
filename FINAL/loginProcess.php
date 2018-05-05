@@ -4,9 +4,9 @@
     
     //print_r($_POST);  //displays values passed in the form
     
-    include '../../dbConnection.php';
+    include '../dbConnection.php';
     
-    $conn = getDatabaseConnection("heroku_48b0fc4a8df8e33");
+    $conn = getDatabaseConnection(otterstyle);
     
     $username = $_POST['username'];
     $password = sha1($_POST['password']);

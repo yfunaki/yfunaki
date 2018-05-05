@@ -1,6 +1,6 @@
 <?php
     
-    include '../../dbConnection.php';
+    include '../dbConnection.php';
     
     $conn = getDatabaseConnection("otterstyle");
     $sql = "DELETE FROM product WHERE productId = " . $_GET['productId'];

@@ -7,7 +7,7 @@
         header("Location:index.php");
     }
     
-    include '../../dbConnection.php';
+    include '../dbConnection.php';
     
     $conn = getDatabaseConnection("product");
     
