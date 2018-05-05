@@ -6,7 +6,7 @@
     
     include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("otterstyle");
+    $conn = getDatabaseConnection("admin");
     
     $username = $_POST['username'];
     $password = sha1($_POST['password']);

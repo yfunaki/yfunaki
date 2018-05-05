@@ -9,7 +9,7 @@
     
     include '../../dbConnection.php';
     
-    $conn = getDatabaseConnection("otterstyle");
+    $conn = getDatabaseConnection("product");
     
     function getCategory()
     {
